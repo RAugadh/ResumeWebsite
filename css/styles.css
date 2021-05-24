@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Work Sans");
 /* background-color: #ff6464; */
+
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +38,11 @@ main {
 .container-fluid img {
   width: 12%;
 }
+.btn > a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .sec-1 {
   display: flex;
   flex-direction: column;
@@ -75,28 +81,51 @@ main {
   width: 80%;
   border-radius: 50%;
 }
+._pd {
+  padding-left: 6rem;
+}
+._pd span > p {
+  word-spacing: 15rem;
+}
+._pd img {
+  justify-content: right;
+}
 .sec-2 {
   display: flex;
   flex-direction: column;
   padding: 3em;
-  text-align: center;
+  /* text-align: center; */
   background: #ff646449;
   border-radius: 2em;
 }
+.sec-2 h2 {
+  font-weight: 400;
+  line-height: 3rem;
+  padding-bottom: 1.5rem;
+}
 .skil-sec ul {
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  list-style-type: none;
-}
-.skil-sec ul > li {
-  padding: 1.5em;
-}
-.sec-3 {
-  padding: 3em;
+  line-height: 3rem;
+  list-style-type: circle;
   text-align: center;
+}
+
+.sec-3 {
+  padding: 5em;
+  text-align: center;
+}
+.sec-3 table {
+  width: 100%;
+  justify-content: center;
+}
+tr > td {
+  border: rgb(75, 73, 73);
+  padding: 0.6em 0.4em;
+  border-style: dashed;
+}
+.sec-3 h2 {
+  font-weight: 400;
+  line-height: 3rem;
+  padding-bottom: 1.5rem;
 }
 .hi-cont {
   padding: 2em 0em;
@@ -109,15 +138,24 @@ main {
   border-style: solid;
   border-radius: 2em;
   margin: 1em;
-  padding: 1em 3em;
+  padding: 1em 2em;
 }
 .hi-cont span > img {
   width: 20%;
 }
+.hi-cont ul {
+  list-style-type: circle;
+  text-decoration: none;
+  line-height: 3rem;
+  color: #000;
+}
 .hi-txt {
   text-align: left;
   font-size: 1rem;
-  padding: 1em;
+  padding: 2em;
+}
+.hi-txt p > a {
+  text-decoration: none;
 }
 .hi-txt h3 {
   font-weight: 600;
@@ -150,7 +188,12 @@ main {
   .sec-1 {
     flex-direction: row;
   }
-
+  .hidden {
+    display: none;
+  }
+  li > a {
+    text-decoration: none;
+  }
   .skil-sec ul {
     flex-direction: row;
   }
